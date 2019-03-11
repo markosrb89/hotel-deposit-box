@@ -1,0 +1,15 @@
+/* CSS RESET */
+html, body, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: $font-family;
+	vertical-align: middle;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	background-color: $background-color;
+}

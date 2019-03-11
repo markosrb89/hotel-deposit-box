@@ -1,0 +1,78 @@
+/* CSS RESET */
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto Mono", monospace;
+  vertical-align: middle;
+  box-sizing: border-box;
+  outline: none; }
+
+body {
+  background-color: #3d3f40; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.control-panel {
+  width: 17vw;
+  height: 52vh;
+  background-color: #7d7d7f;
+  box-shadow: 0px -1px 9px 0px #131212;
+  border-radius: 5px; }
+  .control-panel__screen {
+    width: 12vw;
+    height: 12vh;
+    max-width: 100%;
+    background-color: #7fffff;
+    margin: 25px 46px 20px 46px;
+    box-sizing: border-box;
+    border-radius: 5px; }
+    .control-panel__screen--backlight-off {
+      background-color: #47b2b2; }
+    .control-panel__screen__door-state {
+      color: #434343;
+      padding: 5px; }
+    .control-panel__screen__status-message {
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: center;
+      margin: 35px 0px 0px 45px;
+      color: #434343; }
+  .control-panel__keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-row-gap: 8px;
+    justify-items: center;
+    margin: 25px; }
+    .control-panel__keypad > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: white;
+      width: 4rem;
+      height: 4.3rem;
+      background-color: #63636e;
+      border-radius: 2px;
+      box-shadow: 0px 1px 4px 1px #2e2a2a;
+      cursor: pointer; }
+    .control-panel__keypad > div:focus, .control-panel__keypad div:active, .control-panel__keypad div:focus:active {
+      box-shadow: none; }
+  .control-panel__serial-number {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 12px;
+    right: 10px;
+    color: #434343;
+    font-weight: 700; }
+
+
+/*# sourceMappingURL=style.css.map*/

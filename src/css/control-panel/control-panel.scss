@@ -1,0 +1,71 @@
+.control-panel {
+  width: 17vw;
+  height: 52vh;
+  background-color: $panel-body;
+  box-shadow: 0px -1px 9px 0px $box-shadow-color-cpanel;
+  border-radius: 5px;
+
+  &__screen {
+    width: 12vw;
+    height: 12vh;
+    max-width: 100%;
+    background-color: $backlight-on;
+    margin: 25px 46px 20px 46px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    &--backlight-off {
+      background-color: $backlight-off;
+    }
+
+    &__door-state {
+      color: $screen-text;
+      padding: 5px;
+    }
+
+    &__status-message {
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: center;
+      margin: 35px 0px 0px 45px;
+      color: $screen-text;
+    }
+  }
+
+  &__keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-row-gap: 8px;
+    justify-items: center;
+    margin: 25px;
+    
+    & > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: $keypad-number-color;
+      width: 4rem;
+      height: 4.3rem;
+      background-color: $background-color-buttons;
+      border-radius: 2px;
+      box-shadow: 0px 1px 4px 1px $box-shadow-buttons;
+      cursor: pointer;
+    }
+
+    & > div:focus, div:active, div:focus:active {
+      box-shadow: none;
+    }
+  }
+
+  &__serial-number {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 12px;
+    right: 10px;
+    color: $screen-text;
+    font-weight: 700;
+  }
+}
